@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohan Vamsi & Hansika · Wedding Invitation</title>
+  <meta name="description" content="Mohan Vamsi & Hansika Wedding Invitation — August 22-23, 2026. Sivam Function Hall, Srikalahasti.">
+  <!-- Mobile audio compatibility -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="stylesheet" href="styles.css?v=1783664312">
+</head>
+<body>
+
+  <!-- Background Music -->
+  <audio id="bg-audio" preload="auto" loop playsinline webkit-playsinline></audio>
+
+  <!-- Floating particles background canvas -->
+  <canvas id="bg"></canvas>
+
+  <!-- Floating Actions (shown after splash) -->
+  <div class="floating-actions" id="float-actions">
+    <button id="btn-lang" class="btn-float btn-lang" title="Switch Language">English</button>
+    <button id="btn-audio" class="btn-float" title="Toggle Music">
+      <div class="music-wave">
+        <span></span><span></span><span></span>
+      </div>
+    </button>
+  </div>
+
+  <!-- ══ LORD VINAYAKA SPLASH SCREEN ══ -->
+  <div id="ganesha-splash">
+    <div class="splash-mandala"></div>
+    <div class="splash-glow"></div>
+    <div class="splash-inner">
+      <div class="splash-om">ॐ</div>
+      <div class="splash-img-wrap">
+        <img src="high-quality-lord-ganesha-png-on-lotus-free-download-allpngfree.png" alt="Lord Ganesha" id="splash-ganesha">
+        <div class="splash-halo"></div>
+      </div>
+      <div class="splash-blessing">
+        <span class="splash-te">శ్రీ మహా గణాధిపతియే నమః</span>
+        <span class="splash-en">Sri Maha Ganapathaye Namaha</span>
+        <span class="splash-sub">✦ శుభమస్తు · Subhamastu ✦</span>
+      </div>
+      <!-- Pulse gold enter button -->
+      <button id="btn-enter-invitation" class="btn-enter-invitation" title="Enter Invitation">
+        <span class="btn-enter-text">ఆహ్వానం · Enter</span>
+        <span class="btn-enter-glow"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ══ MAIN INVITATION CONTENT ══ -->
+  <div id="invitation">
+
+    <!-- CINEMATIC HERO — full bleed couple photo -->
+    <section class="hero-photo">
+      <div class="hero-img-wrap">
+        <img src="pics/web/couple.jpg?v=1783664312" alt="Mohan Vamsi & Hansika" class="hero-img" id="hero-img">
+        <div class="hero-gradient"></div>
+      </div>
+
+      <div class="hero-content">
+        <!-- Top blessing line -->
+        <span class="hero-blessing" data-en="Sri Maha Ganapathaye Namaha · Subhamastu" data-te="శ్రీ మహాగణాధిపతియే నమః · శుభమస్తు">శ్రీ మహాగణాధిపతియే నమః · శుభమస్తు</span>
+
+        <!-- Eyebrow tag -->
+        <span class="hero-eyebrow">✦ <span data-en="Wedding Invitation" data-te="వివాహ శుభ ఆహ్వానం">వివాహ శుభ ఆహ్వానం</span> ✦</span>
+
+        <!-- Names block — Alternates automatically with premium transitions -->
+        <div class="hero-names-block">
+          <div class="hero-name-slide active" id="hero-name-telugu">
+            <div class="hero-name-te">
+              <span class="groom-name-te">మోహన్ వంశీ</span>
+              <span class="couple-and-te">మరియు</span>
+              <span class="bride-name-te">హన్సిక</span>
+            </div>
+          </div>
+          <div class="hero-name-slide" id="hero-name-english">
+            <h1 class="hero-name-en">
+              <span class="groom-name">Mohan Vamsi</span>
+              <span class="hero-ampersand">&amp;</span>
+              <span class="bride-name">Hansika</span>
+            </h1>
+          </div>
+        </div>
+
+        <!-- Date + Venue chips -->
+        <div class="hero-chips">
+          <span class="chip gold" data-en="🎊 Reception · 22 Aug, Saturday · 7 PM" data-te="🎊 విందు · 22 ఆగస్టు, శనివారం · సాయంత్రం 7:00">🎊 విందు · 22 ఆగస్టు, శనివారం · సాయంత్రం 7:00</span>
+          <span class="chip gold" data-en="👑 Muhurtham · 23 Aug, Sunday · 3:30 AM" data-te="👑 ముహూర్తం · 23 ఆగస్టు, ఆదివారం · తెల్లవారు 3:30">👑 ముహూర్తం · 23 ఆగస్టు, ఆదివారం · తెల్లవారు 3:30</span>
+          <span class="chip" data-en="🏛️ Sivam Hall, Srikalahasti" data-te="🏛️ శివం హాల్, శ్రీకాళహస్తి">🏛️ శివం హాల్, శ్రీకాళహస్తి</span>
+        </div>
+      </div>
+
+      <div class="scroll-hint">
+        <div class="sc-line"></div>
+        <div class="sc-dot"></div>
+      </div>
+    </section>
+
+    <!-- PHOTO GALLERY STRIP -->
+    <section class="gallery-strip">
+      <div class="gallery-inner">
+        <div class="gallery-item gi-main reveal">
+          <img src="pics/web/groom.jpg?v=1783664312" alt="The Groom" loading="lazy" style="object-position: center top;">
+          <div class="gi-caption" data-en="The Groom · వరుడు" data-te="వరుడు · The Groom">వరుడు · The Groom</div>
+        </div>
+        <div class="gallery-item gi-side reveal d1">
+          <img src="pics/web/bride.jpg?v=1783664312" alt="The Bride" loading="lazy">
+          <div class="gi-caption" data-en="The Bride · వధువు" data-te="వధువు · The Bride">వధువు · The Bride</div>
+        </div>
+        <div class="gallery-item gi-side reveal d2">
+          <img src="pics/web/mehndi.jpg?v=1783664312" alt="Bridal Mehndi" loading="lazy">
+          <div class="gi-caption" data-en="Bridal Mehndi · పెళ్ళి మెహందీ" data-te="పెళ్ళి మెహందీ · Bridal Mehndi">పెళ్ళి మెహందీ · Bridal Mehndi</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COUNTDOWN CLOCK -->
+    <section class="section-wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow" data-en="Time Remaining" data-te="మిగిలిన సమయం">మిగిలిన సమయం</span>
+        <span class="sec-ttl" data-en="Counting Down to the Big Day" data-te="వివాహ వేడుకకు సమయం">వివాహ వేడుకకు సమయం</span>
+        <div class="gold-divider">
+          <div class="divider-line"></div>
+          <div class="divider-leaf">✦</div>
+          <div class="divider-line"></div>
+        </div>
+      </div>
+      <div class="cd-wrap">
+        <div class="cd-grid reveal d2">
+          <div class="cd-unit"><span class="cd-num" id="cd-d">--</span><span class="cd-lbl" data-en="Days" data-te="రోజులు">రోజులు</span></div>
+          <div class="cd-unit"><span class="cd-num" id="cd-h">--</span><span class="cd-lbl" data-en="Hours" data-te="గంటలు">గంటలు</span></div>
+          <div class="cd-unit"><span class="cd-num" id="cd-m">--</span><span class="cd-lbl" data-en="Mins" data-te="నిమిషాలు">నిమిషాలు</span></div>
+          <div class="cd-unit"><span class="cd-num" id="cd-s">--</span><span class="cd-lbl" data-en="Secs" data-te="సెకన్లు">సెకన్లు</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVENTS SCHEDULE -->
+    <section class="section-wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow" data-en="The Celebrations" data-te="వేడుకల కార్యక్రమం">వేడుకల కార్యక్రమం</span>
+        <span class="sec-ttl" data-en="Events & Schedule" data-te="వివాహ శుభ ముహూర్తములు">వివాహ శుభ ముహూర్తములు</span>
+        <div class="gold-divider">
+          <div class="divider-line"></div>
+          <div class="divider-leaf">💍</div>
+          <div class="divider-line"></div>
+        </div>
+      </div>
+      <div class="events-wrap">
+        <div class="events-grid">
+          <div class="ev-card rec reveal d1">
+            <div class="ev-photo-bg">
+              <img src="pics/web/couple.jpg?v=1783664312" alt="Reception" loading="lazy">
+              <div class="ev-photo-overlay"></div>
+            </div>
+            <div class="ev-content">
+              <span class="ev-badge" data-en="🎊 Reception" data-te="🎊 విందు ఆహ్వానం">🎊 విందు ఆహ్వానం</span>
+              <span class="ev-num">22</span>
+              <span class="ev-mon" data-en="August · 2026" data-te="ఆగస్టు · 2026">ఆగస్టు · 2026</span>
+              <span class="ev-day" data-en="Saturday · 7:00 PM onwards" data-te="శనివారం · సాయంత్రం 7:00 గంటల నుండి">శనివారం · సాయంత్రం 7:00 గంటల నుండి</span>
+              <div class="ev-div"></div>
+              <span class="ev-time" data-en="Dinner Ceremony" data-te="విందు కార్యక్రమము">విందు కార్యక్రమము</span>
+              <span class="ev-te" data-en="Welcome dinner to celebrate the union of hearts, accompanied by music and blessings." data-te="వధూవరుల ఆగమనాన్ని పురస్కరించుకుని ఏర్పాటు చేసిన విందు మహోత్సవమునకు ప్రేమతో ఆహ్వానం.">వధూవరుల ఆగమనాన్ని పురస్కరించుకుని ఏర్పాటు చేసిన విందు మహోత్సవమునకు ప్రేమతో ఆహ్వానం.</span>
+              <div class="ev-cal-actions">
+                <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Mohan+Vamsi+%26+Hansika+Wedding+Reception&dates=20260822T133000Z/20260822T173000Z&details=Wedding+Reception+at+Sivam+Function+Hall,+Srikalahasti&location=Sivam+Function+Hall,+Srikalahasti" target="_blank" class="ev-cal-btn">
+                  <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11zM7 11h5v5H7z"/></svg>
+                  <span data-en="Google Calendar" data-te="గూగుల్ క్యాలెండర్">గూగుల్ క్యాలెండర్</span>
+                </a>
+                <button class="ev-cal-btn btn-ical" id="btn-ical-reception" type="button">
+                  <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11zM7 11h5v5H7z"/></svg>
+                  <span data-en="Apple Calendar" data-te="ఆపిల్ క్యాలెండర్">ఆపిల్ క్యాలెండర్</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="ev-card mar reveal d2">
+            <div class="ev-photo-bg">
+              <img src="pics/web/mehndi.jpg?v=1783664312" alt="Marriage" loading="lazy">
+              <div class="ev-photo-overlay"></div>
+            </div>
+            <div class="ev-content">
+              <span class="ev-badge" data-en="👑 Marriage" data-te="👑 శుభ వివాహం">👑 శుభ వివాహం</span>
+              <span class="ev-num">23</span>
+              <span class="ev-mon" data-en="August · 2026" data-te="ఆగస్టు · 2026">ఆగస్టు · 2026</span>
+              <span class="ev-day" data-en="Sunday · 3:30 AM - 5:00 AM" data-te="ఆదివారం తెల్లవారుజామున · 3:30 - 5:00 గంటలకు">ఆదివారం తెల్లవారుజామున · 3:30 - 5:00 గంటలకు</span>
+              <div class="ev-div"></div>
+              <span class="ev-time" data-en="Auspicious Muhurtham" data-te="సుముహూర్తం">సుముహూర్తం</span>
+              <span class="ev-te" data-en="In the auspicious Mithuna Lagnam, the sacred threads will be tied to bind their souls forever." data-te="కర్కాటక/మిథున లగ్న సుముహూర్తమున వధూవరులు వైవాహిక బంధంతో ఏకమయ్యే మంగళకర ఘడియలకు సాక్షిగా నిలవండి.">కర్కాటక/మిథున లగ్న సుముహూర్తమున వధూవరులు వైవాహిక బంధంతో ఏకమయ్యే మంగళకర ఘడియలకు సాక్షిగా నిలవండి.</span>
+              <div class="ev-cal-actions">
+                <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Mohan+Vamsi+%26+Hansika+Wedding+Muhurtham&dates=20260822T220000Z/20260822T233000Z&details=Auspicious+Muhurtham+at+Sivam+Function+Hall,+Srikalahasti&location=Sivam+Function+Hall,+Srikalahasti" target="_blank" class="ev-cal-btn">
+                  <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11zM7 11h5v5H7z"/></svg>
+                  <span data-en="Google Calendar" data-te="గూగుల్ క్యాలెండర్">గూగుల్ క్యాలెండర్</span>
+                </a>
+                <button class="ev-cal-btn btn-ical" id="btn-ical-muhurtham" type="button">
+                  <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11zM7 11h5v5H7z"/></svg>
+                  <span data-en="Apple Calendar" data-te="ఆపిల్ క్యాలెండర్">ఆపిల్ క్యాలెండర్</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEHNDI FULLWIDTH DIVIDER -->
+    <section class="photo-divider reveal">
+      <img src="pics/web/mehndi.jpg?v=1783664312" alt="Bridal Mehndi Hands" class="photo-divider-img">
+      <div class="photo-divider-overlay">
+        <span class="photo-divider-quote" data-en="Two hearts, one destiny." data-te="రెండు హృదయాలు · ఒక జీవితం">రెండు హృదయాలు · ఒక జీవితం</span>
+        <span class="photo-divider-sub" data-en="Mohan Vamsi & Hansika · August 22-23, 2026" data-te="మోహన్ వంశీ & హన్సిక · ఆగస్టు 22-23, 2026">మోహన్ వంశీ & హన్సిక · ఆగస్టు 22-23, 2026</span>
+      </div>
+    </section>
+
+    <!-- FAMILY SECTION -->
+    <section class="section-wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow" data-en="With the Blessings of" data-te="పెద్దల ఆశీర్వాదములతో">పెద్దల ఆశీర్వాదములతో</span>
+        <span class="sec-ttl" data-en="Our Beloved Families" data-te="మా కుటుంబ సభ్యులు">మా కుటుంబ సభ్యులు</span>
+        <div class="gold-divider">
+          <div class="divider-line"></div>
+          <div class="divider-leaf">🌸</div>
+          <div class="divider-line"></div>
+        </div>
+      </div>
+      <div class="parents-wrap">
+        <div class="parents-grid">
+          <div class="p-card reveal d1">
+            <div class="p-card-accent"></div>
+            <div class="p-photo-wrap">
+              <img class="p-photo" src="pics/web/groom_parents.jpg?v=1783664312" alt="Groom's Parents" loading="lazy">
+              <div class="p-photo-glow"></div>
+            </div>
+            <span class="p-eyebrow" data-en="Groom's Family" data-te="వరుడి తరపు వారు">వరుడి తరపు వారు</span>
+            <div class="p-ent">
+              <div class="p-name">Pachappagari Chandra Reddy</div>
+              <div class="p-te" data-en="P. Chandra Reddy" data-te="పచ్చప్పగారి చంద్రారెడ్డి">పచ్చప్పగారి చంద్రారెడ్డి</div>
+              <div class="p-role" data-en="Father" data-te="తండ్రి">తండ్రి</div>
+            </div>
+            <div class="p-ent">
+              <div class="p-name">Pachappagari Saradha</div>
+              <div class="p-te" data-en="P. Saradha" data-te="పచ్చప్పగారి శారద">పచ్చప్పగారి శారద</div>
+              <div class="p-role" data-en="Mother" data-te="తల్లి">తల్లి</div>
+            </div>
+            <div class="p-addr" data-en="Bandaru Palli, Yerpedu Mandal, Tirupati District" data-te="బండారు పల్లి, ఏర్పేడు మండలం, తిరుపతి జిల్లా">బండారు పల్లి, ఏర్పేడు మండలం, తిరుపతి జిల్లా</div>
+          </div>
+
+          <div class="p-card reveal d2">
+            <div class="p-card-accent"></div>
+            <div class="p-photo-wrap">
+              <img class="p-photo" src="pics/web/bride_parents.jpg?v=1783664312" alt="Bride's Parents" loading="lazy">
+              <div class="p-photo-glow"></div>
+            </div>
+            <span class="p-eyebrow" data-en="Bride's Family" data-te="వధువు తరపు వారు">వధువు తరపు వారు</span>
+            <div class="p-ent">
+              <div class="p-name">Chittamuri Muni Reddy</div>
+              <div class="p-te" data-en="C. Muni Reddy" data-te="చిట్టమూరి మునిరెడ్డి">చిట్టమూరి మునిరెడ్డి</div>
+              <div class="p-role" data-en="Father" data-te="తండ్రి">తండ్రి</div>
+            </div>
+            <div class="p-ent">
+              <div class="p-name">Chittamuri Suguna</div>
+              <div class="p-te" data-en="C. Suguna" data-te="చిట్టమూరి సుగుణ">చిట్టమూరి సుగుణ</div>
+              <div class="p-role" data-en="Mother" data-te="తల్లి">తల్లి</div>
+            </div>
+            <div class="p-addr" data-en="Mathakamudi, Sullurpeta Mandal, Tirupati District" data-te="మత్తకాముడి, సూళ్లూరుపేట మండలం, తిరుపతి జిల్లా">మత్తకాముడి, సూళ్లూరుపేట మండలం, తిరుపతి జిల్లా</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VENUE -->
+    <section class="section-wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow" data-en="Where" data-te="కళ్యాణ వేదిక">కళ్యాణ వేదిక</span>
+        <span class="sec-ttl" data-en="Venue & Location" data-te="వివాహ వేదిక మరియు దిశా నిర్దేశం">వివాహ వేదిక మరియు దిశా నిర్దేశం</span>
+        <div class="gold-divider">
+          <div class="divider-line"></div>
+          <div class="divider-leaf">🏛️</div>
+          <div class="divider-line"></div>
+        </div>
+      </div>
+      <div class="venue-wrap">
+        <div class="venue-card reveal d1">
+
+          <!-- TOP: Bright Hall Slideshow -->
+          <div class="venue-slideshow-wrap">
+            <div class="hall-slideshow" id="hallSlideshow">
+              <div class="hall-slide active"><img src="pics/web/hall/wedding_hall_0.webp?v=1783664312" alt="Sivam Function Hall" loading="eager"></div>
+              <div class="hall-slide"><img src="pics/web/hall/wedding_hall_1.webp?v=1783664312" alt="Sivam Function Hall" loading="lazy"></div>
+              <div class="hall-slide"><img src="pics/web/hall/wedding_hall_2.webp?v=1783664312" alt="Sivam Function Hall" loading="lazy"></div>
+              <div class="hall-slide"><img src="pics/web/hall/wedding_hall_3.webp?v=1783664312" alt="Sivam Function Hall" loading="lazy"></div>
+            </div>
+            <!-- Subtle vignette only on edges, not dimming center -->
+            <div class="venue-slide-vignette"></div>
+            <!-- Dot indicators -->
+            <div class="hall-dots" id="hallDots">
+              <span class="hall-dot active" data-idx="0"></span>
+              <span class="hall-dot" data-idx="1"></span>
+              <span class="hall-dot" data-idx="2"></span>
+              <span class="hall-dot" data-idx="3"></span>
+            </div>
+          </div>
+
+          <!-- BOTTOM: Venue Info Panel -->
+          <div class="venue-info-panel">
+            <div class="v-decor vd1"></div>
+            <div class="v-decor vd2"></div>
+            <div class="venue-info-inner">
+              <div class="venue-badge">
+                <span class="v-label" data-en="✦ Wedding Hall ✦" data-te="✦ వేడుక స్థలం ✦">✦ వేడుక స్థలం ✦</span>
+              </div>
+              <span class="v-icon">🏛️</span>
+              <span class="v-name">Sivam Function Hall</span>
+              <span class="v-city" data-en="Srikalahasti, Tirupati District, Andhra Pradesh" data-te="శ్రీకాళహస్తి, తిరుపతి జిల్లా, ఆంధ్ర ప్రదేశ్">Srikalahasti, Tirupati District, Andhra Pradesh</span>
+              <span class="v-te" data-en="Located on Srikalahasti bypass road, easily reachable from Tirupati (38km)." data-te="శ్రీకాళహస్తి బైపాస్ రోడ్డు నందు కలదు, తిరుపతి నుండి సులభ ప్రయాణ సౌకర్యాలు కలవు (38 కి.మీ).">శ్రీకాళహస్తి బైపాస్ రోడ్డు నందు కలదు, తిరుపతి నుండి సులభ ప్రయాణ సౌకర్యాలు కలవు (38 కి.మీ).</span>
+              <a class="v-btn" href="https://maps.google.com/?q=Sivam+Function+Hall+Srikalahasti" target="_blank">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <span data-en="Open in Google Maps" data-te="మ్యాప్స్ లో చూడండి">మ్యాప్స్ లో చూడండి</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- RSVP SECTION -->
+    <section class="section-wrap" id="rsvp">
+      <div class="sec-head reveal">
+        <span class="eyebrow" data-en="Join Us" data-te="మీ హాజరు నిర్ధారించండి">మీ హాజరు నిర్ధారించండి</span>
+        <span class="sec-ttl" data-en="RSVP · Confirm Attendance" data-te="హాజరు నిర్ధారణ">హాజరు నిర్ధారణ</span>
+        <div class="gold-divider">
+          <div class="divider-line"></div>
+          <div class="divider-leaf">💬</div>
+          <div class="divider-line"></div>
+        </div>
+      </div>
+
+      <div class="rsvp-wrap">
+        <div class="rsvp-card reveal d1">
+          <div class="rsvp-card-accent"></div>
+
+          <p class="rsvp-intro" data-en="Let us know you're coming! Fill your name below and tap the WhatsApp button — a message will be sent directly to us. 🙏" data-te="మీరు వస్తున్నారని మాకు తెలియజేయండి! క్రింద మీ పేరు నమోదు చేసి WhatsApp బటన్ నొక్కండి. 🙏">మీరు వస్తున్నారని మాకు తెలియజేయండి! క్రింద మీ పేరు నమోదు చేసి WhatsApp బటన్ నొక్కండి. 🙏</p>
+
+          <div class="rsvp-form" id="rsvpForm">
+            <div class="rsvp-field">
+              <label class="rsvp-label" for="rsvp-name" data-en="Your Name" data-te="మీ పేరు">మీ పేరు</label>
+              <input class="rsvp-input" id="rsvp-name" type="text" placeholder="Enter your full name..." autocomplete="name">
+            </div>
+            <div class="rsvp-field">
+              <label class="rsvp-label" for="rsvp-count" data-en="Number of Guests" data-te="మీతో వచ్చే వారు">మీతో వచ్చే వారు</label>
+              <div class="rsvp-counter">
+                <button class="rsvp-count-btn" id="rsvp-minus" aria-label="Decrease">−</button>
+                <span class="rsvp-count-display" id="rsvp-count-display">1</span>
+                <button class="rsvp-count-btn" id="rsvp-plus" aria-label="Increase">+</button>
+              </div>
+            </div>
+            <div class="rsvp-actions">
+              <button class="rsvp-btn-whatsapp" id="rsvp-whatsapp-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                <span data-en="Confirm on WhatsApp" data-te="WhatsApp లో నిర్ధారించండి">WhatsApp లో నిర్ధారించండి</span>
+              </button>
+              <button class="rsvp-btn-share" id="rsvp-share-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+                <span data-en="Share Invitation" data-te="ఆహ్వానం షేర్ చేయండి">ఆహ్వానం షేర్ చేయండి</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Success state (shown after WhatsApp opens) -->
+          <div class="rsvp-success" id="rsvpSuccess" style="display:none;">
+            <div class="rsvp-success-icon">✅</div>
+            <p class="rsvp-success-title" data-en="WhatsApp Opened!" data-te="WhatsApp తెరవబడింది!">WhatsApp తెరవబడింది!</p>
+            <p class="rsvp-success-sub" data-en="Just tap Send in WhatsApp to confirm your attendance. See you soon! 🎉" data-te="WhatsApp లో Send నొక్కండి. మీకోసం ఎదురు చూస్తున్నాము! 🎉">WhatsApp లో Send నొక్కండి. మీకోసం ఎదురు చూస్తున్నాము! 🎉</p>
+            <button class="rsvp-reset-btn" id="rsvpReset" data-en="← Send for Another Guest" data-te="← మరొకరి కోసం">← మరొకరి కోసం</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <section class="footer-sec">
+      <div class="footer-photo-banner">
+        <img src="pics/web/couple.jpg?v=1783664312" alt="The couple" loading="lazy">
+        <div class="footer-banner-overlay"></div>
+        <div class="footer-banner-text">
+          <p class="f-te reveal" data-en="Your Presence & Blessings make our wedding celebration complete. Please join us to bless the new couple." data-te="మా వివాహ మహోత్సవ వేడుకకు విచ్చేసి, నూతన వధూవరులను ఆశీర్వదించాల్సిందిగా మనఃపూర్వకంగా ఆహ్వానిస్తున్నాము.">మా వివాహ మహోత్సవ వేడుకకు విచ్చేసి, నూతన వధూవరులను ఆశీర్వదించాల్సిందిగా మనఃపూర్వకంగా ఆహ్వానిస్తున్నాము.</p>
+          <p class="f-en reveal d2" data-en="We look forward to sharing this beautiful milestone with you all." data-te="మా సంతోషంలో మీరందరూ భాగస్వాములు కాగలరని ఆశిస్తూ.">మా సంతోషంలో మీరందరూ భాగస్వాములు కాగలరని ఆశిస్తూ.</p>
+          <span class="subham reveal d3" data-en="✦ Shubham · Thank You ✦" data-te="✦ శుభం · ధన్యవాదములు ✦">✦ శుభం · ధన్యవాదములు ✦</span>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="app.js?v=1783664312"></script>
+</body>
+</html>
